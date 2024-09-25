@@ -1,112 +1,78 @@
-# Caffeine Intake Recommender
+# ☕ Caffeine Intake Recommender ☕  
+Your Personalized Guide to Smarter Caffeine Consumption 🚀
 
-![image](https://github.com/user-attachments/assets/6ba46e1b-0e7c-4e1d-9579-ce8f56bd5bc0)
+> *"Not all caffeine hits are created equal!"*  
+> *Boost your productivity, while staying healthy with just the right amount of caffeine tailored to your body and your goals.*
 
+---
 
-## Inspiration
+## 🎯 **Overview**
 
-<p>
-The members are part of a working/studying community that tends to rely on caffeine to improve their performance and focus. Over the years, this community has been expanding, as the idea of drinking a coffee or energetic drink becomes a trending activity, fostering new types of beverages in the market and coffee shops. While caffeine benefits one's performance, people tend to overestimate the advantages and neglect caffeine's side effects. If consumed in the wrong amount or at the wrong time, caffeine can negatively affect productivity, causing fatigue, headaches, excessive anxiety, or poor sleep quality. Many community members have experienced these side effects without understanding the underlying cause, leading to frustration as they assumed caffeine would enhance their performance. Therefore, the team created the Caffeine Intake Advisor to help people consume caffeine effectively and healthily. Zepp's Smart Watch also contributes to the ideation process by collecting relevant biological data such as sleep quality and stress levels. The team is confident that the product will positively impact people's well-being.
-</p>
+Do you feel sluggish after drinking too much coffee? Or maybe you’re crashing halfway through your day? We created the **Caffeine Intake Recommender** to make sure that you’re consuming caffeine in the most optimal, healthy way possible. Our app uses **real-time health data**, **caffeine sensitivity tracking**, and **smart algorithms** to recommend how much caffeine you should consume to meet your productivity goals, without hitting that jittery wall.
 
-## What It Does
+Using the app is simple: just input your goals and preferences, and based on your past data, our algorithm recommends the best caffeine intake for you to feel focused, energized, and healthy!
 
-<p>
-The Caffeine Intake Advisor app interacts directly with the user by asking about their caffeine beverage or food preference and their goal duration for the productive session. Based on the user's past biological responses to specific amounts of caffeine, real-time health metrics, and the time of day, the app recommends the optimal amount of caffeine.
-</p>
+---
 
-<h3>Backend Process</h3>
+## 🌟 **Core Features**
 
-<p>
-To recommend the appropriate amount of caffeine, the app needs to know the user’s regular caffeine intake and their caffeine sensitivity. This data is collected and analyzed through the following steps:
-</p>
+### 🔍 **Caffeine Tracking and Recommendation**
+- Our app tracks your daily caffeine intake through an initial questionnaire and monitors your responses to caffeine over 5 days to understand how caffeine affects you.
+- Based on factors like your caffeine tolerance, time of day, sleep data, and heart rate, the app recommends the perfect amount of caffeine to consume for each day and goal session.
 
-<ol>
-  <li>
-    <p><strong>Initial Questionnaire:</strong> When the user creates an account, they answer questions about:
-    </p>
-    <ul>
-      <li>Serving size: Amount of caffeinated drinks and food consumed per day</li>
-      <li>Time: The usual time period when caffeine is consumed</li>
-      <li>Variability: Whether the serving size varies daily or is consistent</li>
-      <li>Duration of habit: How long the person has had this habit</li>
-    </ul>
-  </li>
-  <li>
-    <p><strong>5-Day Monitoring:</strong> The app monitors the user’s caffeine sensitivity based on real-time data:
-    </p>
-    <ul>
-      <li>Sleep patterns: Sleep and wake-up times, and the impact of caffeine intake on sleep</li>
-      <li>Stress level and heart rate: Baseline measurements and post-caffeine consumption measurements</li>
-    </ul>
-  </li>
-  <li>
-    <p><strong>Recommendation:</strong> After determining the user’s regular caffeine intake and sensitivity, the app recommends the optimal caffeine amount using the formula:
-    </p>
-    <p>
-      Caffeine Amount (mg) = Regular Caffeine Intake x Caffeine Sensitivity Factor x Study Duration x Time Gap Factor
-    </p>
-  </li>
-</ol>
+### ⏳ **Real-Time Health Metrics**
+- The app pulls data from **Zepp Smart Watch**, including heart rate, stress levels, and sleep patterns to understand how caffeine impacts your body. This personalized approach ensures you’re getting the right caffeine amount for **you**.
 
-## How We Built It
+### 💻 **Smart Algorithms for Personalized Advice**
+- We leveraged **MindsDB**'s machine learning models to predict your optimal caffeine dose. The algorithm continuously adapts based on your evolving patterns to give you the best advice day after day.
 
-<p>
-We used Intel data to train an algorithm and MindsDB to connect the machine learning algorithm with our software. The process can be categorized into several components:
-</p>
+### 🖥 **User-Friendly Interface**
+- Whether you're a coffee lover or prefer energy drinks, our interface is designed to be intuitive and easy to navigate. Just plug in your preferences and let the app do the rest!
 
-<h3>Research</h3>
-<p>
-We researched key factors affecting caffeine intake and performance, compiled data on caffeinated beverages and foods, and developed a table specifying caffeine amounts in different units.
-</p>
+---
 
-<h3>UI/UX Design</h3>
-<p>
-We designed wireframes for the smartwatch, focusing on an easy and smooth user experience. We used Figma to visualize the UI/UX aspects and ensure intuitive navigation.
-</p>
+## 🛠️ **How It Works**
 
-<h3>Algorithm Training</h3>
-<p>
-We used MindsDB pre-trained models to predict caffeine intake based on existing datasets and real-time user data. The algorithm derives the caffeine amount using the formula mentioned above.
-</p>
+1. **Initial Setup**  
+   During setup, you’ll fill out a quick questionnaire about your caffeine habits—what you drink, when you drink it, and how often.
 
-<h3>Development</h3>
-<p>
-We implemented backend code in JavaScript, integrated with Zepp OS API and AutoGUI for smartwatch compatibility.
-</p>
+2. **5-Day Monitoring**  
+   Over the first 5 days, the app will collect real-time data from your **Zepp Smart Watch** to monitor how caffeine affects your body, particularly focusing on:
+   - **Sleep patterns**: How well do you sleep post-caffeine?
+   - **Stress levels and heart rate**: How does caffeine impact your stress and heart metrics?
 
-## Challenges
+3. **Personalized Recommendations**  
+   After the data collection, our app will start recommending caffeine amounts tailored to your unique physiology, preferences, and daily goals—whether it’s acing an exam, powering through work, or just enjoying a calm and productive day.
 
-<p>
-We faced challenges in identifying key app features to maximize social impact within time and resource constraints. Limited access to real user datasets required extensive research and hypothesis testing.
-</p>
+---
 
-## Accomplishments
+## 🔧 **How We Built It**
 
-<p>
-We successfully integrated software with hardware and developed a realistic solution despite initial constraints. We created approximate user datasets through research and applied insights to generate the necessary data.
-</p>
+This project combines cutting-edge tech with deep research into caffeine’s effects on human performance. Here’s a glimpse of the tools and tech:
 
-## What We Learned
+- **Intel Data**: We used Intel datasets to train our algorithm and predict caffeine tolerance.
+- **MindsDB**: MindsDB’s pre-trained models help predict the exact caffeine dosage you need based on real-time and historical data.
+- **Zepp OS**: We integrated with Zepp Smart Watches to collect sleep, heart rate, and stress level data.
+- **Figma**: Our UI/UX was designed on Figma, focusing on simplicity and usability for the end user.
+- **JavaScript**: The app backend, built in JavaScript, powers the data processing and integrates with external APIs for real-time insights.
 
-<p>
-We improved our ability to connect front-end and back-end components, enhanced critical thinking for effective data utilization, and honed problem-solving and communication skills.
-</p>
+---
 
-## What's Next
+## 🚀 **What’s Next?**
 
-<p>
-We aim to make the app more personalized by adding questionnaire features for individual factors such as age, medications, pregnancy, menstrual cycles, and caffeine preferences. We plan to integrate the app with other health and fitness apps, and add caffeine intake tracking features for AI assistants like Siri and Alexa.
-</p>
+The **Caffeine Intake Recommender** is just getting started! Here’s what we have in store:
+- **Advanced Questionnaires**: More detailed questions on factors like age, medications, and lifestyle for hyper-personalized recommendations.
+- **Expanded Integration**: Bringing in data from other fitness apps and AI assistants like Siri or Alexa for hands-free tracking.
+- **Daily Logs**: Let users track their caffeine intake over time and offer deeper insights into their caffeine habits.
 
-## Built With
+---
 
-<p>
-JavaScript, MindsDB, Zepp OS, Figma
-</p>
+## 📸 **Screenshots**
 
-## More Info: 
+> ![image](https://github.com/user-attachments/assets/6ba46e1b-0e7c-4e1d-9579-ce8f56bd5bc0)
 
-<p>
-<a href="https://devpost.com/software/caffeine-intake-recommender">Devpost</a>
-</p>
+---
+
+## 💡 **More Info**
+
+Curious about our process, challenges, and how we built this? Check out our full story on **[Devpost](https://devpost.com/software/caffeine-intake-recommender)**!
